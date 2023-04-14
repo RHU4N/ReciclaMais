@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Material">
+
+    <Toolbar
+        android:id="@+id/action_favorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#9FDD29"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="#9FDD29"
+            android:onClick="Voltar"
+            app:srcCompat="@drawable/voltar"
+            tools:ignore="SpeakableTextPresentCheck"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="8dp" />
+
+        <TextView
+            android:id="@+id/textoTitulo2"
+            android:layout_width="340dp"
+            android:layout_height="27dp"
+            android:lineSpacingExtra="16sp"
+            android:text="Mapa"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+    </Toolbar>
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/linha" />
+
+    <ScrollView
+        android:id ="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="@id/linearLayoutBotao"
+        app:layout_constraintBottom_toBottomOf="@id/action_favorite"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        tools:layout_editor_absoluteY="540dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/lpapel" />
+
+            <TextView
+                android:id="@+id/textmaterial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/lavar_e_cor"
+                android:layout_marginBottom="29dp"
+                android:autoSizeTextType="uniform"
+                app:fontFamily="@font/roboto_medium"
+                android:text="- 1 Caixa de leite; - Tesoura; - Cola Branca; - Papel Decorativo (opcional)"
+                app:drawableTint="#808080" />
+
+            <TextView
+                android:id="@+id/textmaterial2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/lavar_e_cor"
+                android:layout_marginBottom="29dp"
+                android:autoSizeTextType="uniform"
+                app:fontFamily="@font/roboto_medium"
+                android:text="- 1 Caixa de leite; - Tesoura; - Cola Branca; - Papel Decorativo (opcional)"
+                app:drawableTint="#808080" />
+
+            <TextView
+                android:id="@+id/textmaterial3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/lavar_e_cor"
+                android:layout_marginBottom="29dp"
+                android:autoSizeTextType="uniform"
+                app:fontFamily="@font/roboto_medium"
+                android:text="- 1 Caixa de leite; - Tesoura; - Cola Branca; - Papel Decorativo (opcional)"
+                app:drawableTint="#808080" />
+
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="100dp"
+                android:layout_weight="2" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/linearLayoutBotao"
+        android:layout_width="409dp"
+        android:layout_height="82dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="Guia"
+            app:srcCompat="@drawable/lixinho"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="Voltar"
+            app:srcCompat="@drawable/casa"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:onClick="Mapa"
+            app:srcCompat="@drawable/mapmaker"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
